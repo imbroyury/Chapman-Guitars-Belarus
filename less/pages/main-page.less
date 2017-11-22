@@ -1,0 +1,45 @@
+.grid-page-wrap.main-page {
+  .main-section {
+    position: relative;
+    .image-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: none no-repeat center center;
+      background-size: cover;
+      opacity: 0;
+      z-index: 0;
+      transition: all .5s, background-image 0s;
+      &.image1 {
+        background-image: url("../images/content/main/1.jpg");
+      }
+      &.image2 {
+        background-image: url("../images/content/main/2.jpg");
+      }
+      &.image3 {
+        background-image: url("../images/content/main/3.jpg");
+      }
+      &.image4 {
+        background-image: url("../images/content/main/4.jpg");
+      }
+      &.image5 {
+        background-image: url("../images/content/main/5.jpg");
+      }
+      &.image6 {
+        background-image: url("../images/content/main/6.jpg");
+      }
+      &.image7 {
+        background-image: url("../images/content/main/7.jpg");
+      }
+      &.image8 {
+        background-image: url("../images/content/main/8.jpg");
+      }
+      &.current-image {
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+  }
+}
