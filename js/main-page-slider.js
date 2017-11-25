@@ -1,5 +1,6 @@
-let imageArray = document.querySelectorAll('.main-section .image-item');
-let currentImage = 0;
+let imageArray = document.querySelectorAll('.main-section .image-item'),
+    currentImage = 0;
+
 setInterval(nextSlide, 3000);
 
 function nextSlide() {

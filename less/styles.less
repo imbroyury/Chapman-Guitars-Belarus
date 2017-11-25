@@ -1,21 +1,12 @@
 @import "help/reset";
 @import "help/variables";
 @import "help/mixins";
-@import "side-menu";
-@import "pages/main-page";
-@import "pages/guitar-gallery";
-@import "pages/contact-page";
-@import "pages/purchase-page";
-@import "pages/guitar-page";
-@import "pages/artists-page";
 
 body {
   font-family: 'Arsenal', sans-serif;
   font-size: 16px;
   color: @mainFontColor;
-  background-color: @mainColor;
-  background-image: url("../images/design/asfalt-dark.png");
-  background-repeat: repeat;
+  background: repeat url("../images/design/asfalt-dark.png"), @mainColor;
   h1, h2, h3, button, a {
     font-family: 'Oswald', sans-serif;
   }
@@ -55,13 +46,22 @@ body {
     grid-area: main-section;
   }
   .footer {
+    .flex-center;
     background-color: @secondaryColor;
     grid-area: footer;
     z-index: 1;
-    .flex-center;
-    text-align: center;
     padding: 10px;
+    .footer-content {
+      text-align: center;
+    }
   }
 }
 
+@import "side-menu";
+@import "pages/main-page";
+@import "pages/guitar-gallery";
+@import "pages/guitar-page";
+@import "pages/artists-page";
+@import "pages/purchase-page";
+@import "pages/contact-page";
 @import "help/media-queries";

@@ -1,12 +1,38 @@
+@import "../help/variables";
+@import "../help/mixins";
+
 .grid-page-wrap.main-page {
   .main-section {
-    position: relative;
+    .flex-center;
+    .main-page-message {
+      position: relative;
+      z-index: 1;
+      min-width: 200px;
+      color: @mainFontColor;
+      background-color: fade(@secondaryColor, 80%);
+      border: 3px solid @mainFontColor;
+      transition: all .3s;
+      &:hover {
+        color: @secondaryColor;
+        background-color: fade(@secondaryFontColor, 90%);
+        border: 3px solid @secondaryColor;
+      }
+      a {
+        font-size: 1.5em;
+        display: block;
+        height: 100%;
+        padding: 30px;
+      }
+    }
     .image-item {
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
       width: 100%;
+      min-height: 350px;
+      min-width: 320px;
+      padding: 0;
       background: none no-repeat center center;
       background-size: cover;
       opacity: 0;

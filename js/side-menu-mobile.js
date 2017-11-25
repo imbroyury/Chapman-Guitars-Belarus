@@ -1,7 +1,6 @@
 let sideMenu = document.querySelector('.side-menu'),
     sideMenuMobileButton = document.querySelector('.side-menu-mobile-button'),
-    sideMenuCloseIcon = document.querySelector('.side-menu-close-icon'),
-    page = document.querySelector('.grid-page-wrap');
+    sideMenuCloseIcon = document.querySelector('.side-menu-close-icon');
 
 function openSideMenu() {
     sideMenu.classList.add('side-menu-transition', 'side-menu-visible');

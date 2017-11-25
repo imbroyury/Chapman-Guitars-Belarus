@@ -1,0 +1,73 @@
+.grid-page-wrap.contact-page .main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 50px 20px;
+}
+.grid-page-wrap.contact-page .main-section h1 {
+  margin: 10px;
+}
+.grid-page-wrap.contact-page .main-section .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid-page-wrap.contact-page .main-section .contact-form input,
+.grid-page-wrap.contact-page .main-section .contact-form textarea,
+.grid-page-wrap.contact-page .main-section .contact-form button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #eef0e5;
+  border-radius: 15px;
+  background-color: #173e43;
+  color: #eef0e5;
+  outline: none;
+  transition: all .3s;
+}
+.grid-page-wrap.contact-page .main-section .contact-form input:focus,
+.grid-page-wrap.contact-page .main-section .contact-form textarea:focus {
+  background-color: #fae596;
+  border: 2px solid #173e43;
+  box-shadow: 0 0 7px 0 #173e43;
+  color: #173e43;
+}
+.grid-page-wrap.contact-page .main-section .contact-form input.check-required-input:not(:valid),
+.grid-page-wrap.contact-page .main-section .contact-form textarea.check-required-input:not(:valid) {
+  border: 2px solid darkred;
+}
+.grid-page-wrap.contact-page .main-section .contact-form input {
+  text-align: center;
+}
+.grid-page-wrap.contact-page .main-section .contact-form textarea {
+  min-width: 200px;
+  max-width: 350px;
+  max-height: 400px;
+}
+.grid-page-wrap.contact-page .main-section .contact-form button:hover {
+  background-color: #fae596;
+  border: 2px solid #173e43;
+  color: #173e43;
+}
+.grid-page-wrap.contact-page .main-section .contact-form .form-info {
+  font-size: 0.9em;
+}
+.grid-page-wrap.contact-page .main-section .contact-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid-page-wrap.contact-page .main-section .contact-data a[href^="tel:"] {
+  margin: 10px;
+  transition: all .3s;
+}
+.grid-page-wrap.contact-page .main-section .contact-data a[href^="tel:"]:hover {
+  color: #fae596;
+}
+.grid-page-wrap.contact-page .main-section .contact-data a[href^="tel:"]::before {
+  content: "\260e";
+  margin-right: 0.5em;
+}

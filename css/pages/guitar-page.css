@@ -1,0 +1,61 @@
+.grid-page-wrap.guitar-page .main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px 30px 30px;
+}
+.grid-page-wrap.guitar-page .main-section .model-name {
+  margin-bottom: 20px;
+}
+.grid-page-wrap.guitar-page .main-section .specs-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid-page-wrap.guitar-page .main-section .specs-table .table-header {
+  margin: 10px;
+}
+.grid-page-wrap.guitar-page .main-section .specs-table .table-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 7px;
+  margin: 3px;
+  transition: all .1s;
+  border-bottom: 2px solid #173e43;
+}
+.grid-page-wrap.guitar-page .main-section .specs-table .table-row:hover {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #173e43;
+  color: #fae596;
+  border-bottom: 2px solid #fae596;
+}
+.grid-page-wrap.guitar-page .main-section .specs-table .table-row .item-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 30%;
+  min-width: 130px;
+  margin-right: 10px;
+}
+.grid-page-wrap.guitar-page .main-section .specs-table .table-row .item-description .guitar-color {
+  margin: 0 5px;
+  width: 90px;
+  border-radius: 15px;
+  box-shadow: 0 0 3px 0 #173e43;
+}
+.grid-page-wrap.guitar-page .main-section .model-photos-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-page-wrap.guitar-page .main-section .model-photos-gallery .model-photo {
+  width: 200px;
+  filter: drop-shadow(3px 3px 5px #173e43);
+  transition: all .3s;
+}
+.grid-page-wrap.guitar-page .main-section .model-photos-gallery .model-photo:hover {
+  filter: drop-shadow(5px 5px 10px #173e43);
+}

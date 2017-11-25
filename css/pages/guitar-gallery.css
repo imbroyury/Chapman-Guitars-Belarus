@@ -1,0 +1,77 @@
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .series-name {
+  grid-column: span 4;
+  text-align: center;
+  margin: 10px;
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .series-name h2 {
+  display: inline-block;
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .series-name h2::after {
+  display: block;
+  content: '';
+  background-color: #eef0e5;
+  height: 2px;
+  width: 100%;
+  transform: translateY(10px);
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .guitar-item {
+  display: grid;
+  max-width: 250px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "guitar-name guitar-image" "color-circles guitar-image";
+  align-items: center;
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .guitar-item .header-link {
+  grid-area: guitar-name;
+  font-size: 1.1em;
+  transition: all .2s;
+  display: inline-block;
+  text-align: center;
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .guitar-item .header-link:hover {
+  color: #fae596;
+  transform: scale(1.1);
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .guitar-item .circle-wrap {
+  grid-area: color-circles;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .guitar-item .circle-wrap .color-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 5px;
+  cursor: pointer;
+  transition: all .5s;
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .guitar-item .circle-wrap .color-circle.current-color-circle {
+  box-shadow: 0 0 5px 0 #173e43;
+  transform: scale(1.1);
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .guitar-item:hover .guitar-image {
+  filter: drop-shadow(7px 7px 10px #173e43);
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .guitar-item .guitar-image {
+  grid-area: guitar-image;
+  width: 150px;
+  filter: drop-shadow(3px 3px 5px #173e43);
+  visibility: hidden;
+  opacity: 0;
+  transition: filter .3s, visibility .5s, opacity .5s;
+}
+.grid-page-wrap.guitar-gallery .main-section .guitar-gallery-wrap .guitar-item .guitar-image.current-guitar-image {
+  visibility: visible;
+  opacity: 1;
+}

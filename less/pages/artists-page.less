@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    padding: 100px 30px 30px 30px;
+    padding: 70px 30px 30px;
     .artist-section {
       display: flex;
       flex-direction: column;
@@ -43,11 +43,11 @@
         transition: all .5s;
         transform: scale(0) translateY(-50%);
         opacity: 0;
-        height: 0;
+        max-height: 0;
         &.visible {
           transform: scale(1) translateY(0);
           opacity: 1;
-          height: auto;
+          max-height: 170px;
         }
       }
     }

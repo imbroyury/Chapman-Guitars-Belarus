@@ -1,0 +1,68 @@
+.grid-page-wrap.main-page .main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-page-wrap.main-page .main-section .main-page-message {
+  position: relative;
+  z-index: 1;
+  min-width: 200px;
+  color: #eef0e5;
+  background-color: rgba(23, 62, 67, 0.8);
+  border: 3px solid #eef0e5;
+  transition: all .3s;
+}
+.grid-page-wrap.main-page .main-section .main-page-message:hover {
+  color: #173e43;
+  background-color: rgba(250, 229, 150, 0.9);
+  border: 3px solid #173e43;
+}
+.grid-page-wrap.main-page .main-section .main-page-message a {
+  font-size: 1.5em;
+  display: block;
+  height: 100%;
+  padding: 30px;
+}
+.grid-page-wrap.main-page .main-section .image-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 350px;
+  min-width: 320px;
+  padding: 0;
+  background: none no-repeat center center;
+  background-size: cover;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s, background-image 0s;
+}
+.grid-page-wrap.main-page .main-section .image-item.image1 {
+  background-image: url("../images/content/main/1.jpg");
+}
+.grid-page-wrap.main-page .main-section .image-item.image2 {
+  background-image: url("../images/content/main/2.jpg");
+}
+.grid-page-wrap.main-page .main-section .image-item.image3 {
+  background-image: url("../images/content/main/3.jpg");
+}
+.grid-page-wrap.main-page .main-section .image-item.image4 {
+  background-image: url("../images/content/main/4.jpg");
+}
+.grid-page-wrap.main-page .main-section .image-item.image5 {
+  background-image: url("../images/content/main/5.jpg");
+}
+.grid-page-wrap.main-page .main-section .image-item.image6 {
+  background-image: url("../images/content/main/6.jpg");
+}
+.grid-page-wrap.main-page .main-section .image-item.image7 {
+  background-image: url("../images/content/main/7.jpg");
+}
+.grid-page-wrap.main-page .main-section .image-item.image8 {
+  background-image: url("../images/content/main/8.jpg");
+}
+.grid-page-wrap.main-page .main-section .image-item.current-image {
+  opacity: 1;
+  z-index: 1;
+}

@@ -1,7 +1,7 @@
 function initMap() {
 
-    let shopLocation = {lat: 53.909010, lng: 27.522712};
-    let map = new google.maps.Map(document.getElementById('shop-map'), {
+    let shopLocation = {lat: 53.909010, lng: 27.522712},
+        map = new google.maps.Map(document.getElementById('shop-map'), {
         zoom: 12,
         center: shopLocation,
         styles: [
@@ -95,5 +95,4 @@ function initMap() {
         // 3 seconds after the center of the map has changed, pan back to the marker.
         map.panTo(marker.getPosition());
     });
-
 }

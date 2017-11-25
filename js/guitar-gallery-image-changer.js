@@ -1,4 +1,4 @@
-let gallery = document.body.querySelector('.guitar-gallery-wrap');
+let gallery = document.querySelector('.guitar-gallery-wrap');
 
 gallery.addEventListener('click', function (event) {
     if (event.target.classList.contains('color-circle')) {
@@ -6,7 +6,7 @@ gallery.addEventListener('click', function (event) {
             circleTag = circle.dataset.circleTag,
             guitarName = circle.closest('.guitar-item').dataset.guitarName,
             currentImageAttr = guitarName + '-' + circleTag,
-            requiredGuitarImage = document.body.querySelector(`.guitar-image[data-guitar-image='${currentImageAttr}']`);
+            requiredGuitarImage = document.querySelector(`.guitar-image[data-guitar-image='${currentImageAttr}']`);
 
         if (!circle.classList.contains('current-color-circle')) {
             circle.parentNode.querySelector('.current-color-circle').classList.remove('current-color-circle');

@@ -1,0 +1,50 @@
+.grid-page-wrap.artists-page .main-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 70px 30px 30px;
+}
+.grid-page-wrap.artists-page .main-section .section-header {
+  grid-column: span 4;
+  text-align: center;
+}
+.grid-page-wrap.artists-page .main-section .artist-section {
+  display: flex;
+  flex-direction: column;
+}
+.grid-page-wrap.artists-page .main-section .artist-section .artist-name {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.grid-page-wrap.artists-page .main-section .artist-section .artist-name h2 {
+  display: inline-block;
+  cursor: pointer;
+  transition: all .3s;
+}
+.grid-page-wrap.artists-page .main-section .artist-section .artist-name h2:hover {
+  color: #fae596;
+  transform: scale(1.1);
+}
+.grid-page-wrap.artists-page .main-section .artist-section .artist-photo {
+  width: 100%;
+  border-radius: 15px;
+  transition: all .3s;
+  box-shadow: 0 3px 3px 0 #173e43;
+  cursor: pointer;
+}
+.grid-page-wrap.artists-page .main-section .artist-section:hover .artist-photo {
+  box-shadow: 0 3px 10px 1px #173e43;
+}
+.grid-page-wrap.artists-page .main-section .artist-section .artist-description {
+  padding: 15px;
+  transition: all .5s;
+  transform: scale(0) translateY(-50%);
+  opacity: 0;
+  max-height: 0;
+}
+.grid-page-wrap.artists-page .main-section .artist-section .artist-description.visible {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+  max-height: 170px;
+}

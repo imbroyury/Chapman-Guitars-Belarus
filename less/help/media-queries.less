@@ -22,6 +22,15 @@
         grid-template-columns: repeat(3, 1fr);
       }
     }
+    &.guitar-page {
+      .main-section {
+        .model-photos-gallery {
+          .model-photo {
+            width: 180px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -43,9 +52,18 @@
     &.artists-page {
       .main-section {
         grid-template-columns: repeat(2, 1fr);
-        padding: 30px;
+        padding: 70px 30px 30px;
         .section-header {
           grid-column: span 2;
+        }
+      }
+    }
+    &.guitar-page {
+      .main-section {
+        .model-photos-gallery {
+          .model-photo {
+            width: 160px;
+          }
         }
       }
     }
@@ -56,8 +74,9 @@
   body {
     font-size: 15px;
   }
+
   .grid-page-wrap {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(320px, auto);
     grid-template-rows: minmax(100vh, auto) 100px;
     grid-template-areas: "main-section" "footer";
     &.main-page {
@@ -90,7 +109,6 @@
         }
       }
     }
-
     &.guitar-gallery {
       .main-section {
         .guitar-gallery-wrap {
@@ -101,7 +119,6 @@
         }
       }
     }
-
     &.artists-page {
       .main-section {
         grid-template-columns: 1fr;
@@ -110,24 +127,29 @@
         }
       }
     }
-
     &.guitar-page {
       .main-section {
-        padding: 30px 10px;
-        .flex-row-wrap {
-          .guitar-image {
-            height: 100px;
+        padding: 70px 10px 30px;
+        .specs-table {
+          .table-row {
+            .item-description {
+              .guitar-color {
+                width: 70px;
+              }
+            }
           }
         }
-        .photo-gallery {
-          width: 100%;
+        .model-photos-gallery {
+          .model-photo {
+            width: 140px;
+          }
         }
       }
     }
   }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 550px) {
   .grid-page-wrap {
     .header {
       display: none;
