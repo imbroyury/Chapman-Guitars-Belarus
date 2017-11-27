@@ -1,12 +1,13 @@
 .grid-page-wrap.main-page .main-section {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template: 100% / 100%;
+  grid-template-areas: "main-section";
+  justify-items: center;
   align-items: center;
 }
 .grid-page-wrap.main-page .main-section .main-page-message {
-  position: relative;
+  grid-area: main-section;
   z-index: 1;
-  min-width: 200px;
   color: #eef0e5;
   background-color: rgba(23, 62, 67, 0.8);
   border: 3px solid #eef0e5;
@@ -24,14 +25,9 @@
   padding: 30px;
 }
 .grid-page-wrap.main-page .main-section .image-item {
-  position: absolute;
-  top: 0;
-  left: 0;
+  grid-area: main-section;
   height: 100%;
   width: 100%;
-  min-height: 350px;
-  min-width: 320px;
-  padding: 0;
   background: none no-repeat center center;
   background-size: cover;
   opacity: 0;
